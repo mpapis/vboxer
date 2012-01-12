@@ -40,7 +40,7 @@ Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby & rubygem
 
     vagrant box add 'rvm-ubuntu-11.10-i386' 'rvm-ubuntu-11.10-i386.box'
 
-## Tnit the image
+## Init the image
 
     vagrant init 'rvm-ubuntu-11.10-i386'
 
