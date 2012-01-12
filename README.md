@@ -35,3 +35,23 @@ Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby & rubygem
 ## Validate and export so it could be reused later
 
     vagrant basebox validate rvm-ubuntu-11.10-i386
+
+## Add the new vagrant package
+
+    vagrant box add 'rvm-ubuntu-11.10-i386' 'rvm-ubuntu-11.10-i386.box'
+
+## Tnit the image
+
+    vagrant init 'rvm-ubuntu-11.10-i386'
+
+## Start up image
+
+    vagrant up
+
+## Connect to the image
+
+    vagrant ssh
+
+## And finally run some tests
+
+    ruby -rreadline -rzlib -ropenssl -rcurses -ryaml -e 'puts :ok'
