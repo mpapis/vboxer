@@ -1,4 +1,5 @@
-iso/*.iso
-*.box
-Vagrantfile
 .vagrant
+*.box
+iso/*.iso
+Vagrantfile
+Gemfile.lock
