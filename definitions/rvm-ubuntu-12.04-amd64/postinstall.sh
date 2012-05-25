@@ -39,6 +39,7 @@ curl -L get.rvm.io | bash -s stable
 PATH=$PATH:/usr/local/rvm/bin
 echo "gem: --no-ri --no-rdoc" | tee /home/vagrant/.gemrc > /root/.gemrc
 rvm install 1.9.3
+rvm alias create defult 1.9.3
 source /usr/local/rvm/environments/default
 
 # Installing chef & Puppet
