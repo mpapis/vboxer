@@ -2,8 +2,8 @@
 
 ## For start install gems
 
-    gem install vagrant
-    gem install veewee
+    bundle install
+    veewee-templates-update
 
 ## Generate vm definition
 
@@ -15,9 +15,9 @@ Download required iso
 
 ## Configuration
 
-Edit `definitions/rvm-ubuntu-11.10-i386/definition.rb` - increase ram to 1024
+Edit `definitions/rvm-ubuntu-11.10-i386/definition.rb` - adjust ram / cpu -> 1024-2048 / 1-2
 
-Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby & rubygems code with:
+Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby, rubygems, gem install code with:
 
     # Install rvm & ruby
     apt-get -y install curl gcc git-core libyaml-dev libsqlite3-dev libxml2-dev libxslt-dev libc6-dev ncurses-dev subversion
