@@ -4,4 +4,5 @@ source :rubygems
 
 gem 'vagrant'
 gem 'veewee'
+gem 'veewee-templates-updater'
 
