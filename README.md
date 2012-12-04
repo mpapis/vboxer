@@ -35,6 +35,7 @@ Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby, rubygems
 ## Validate and export so it could be reused later
 
     vagrant basebox validate rvm-ubuntu-11.10-i386
+    vagrant basebox export rvm-ubuntu-11.10-i386 rvm-ubuntu-11.10-i386.box
 
 ## Add the new vagrant package
 
