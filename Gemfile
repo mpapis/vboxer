@@ -1,8 +1,8 @@
-source :rubygems
+source "https://rubygems.org"
 
-#ruby=1.9.3@rvm-test-vagrant
+#ruby=2.0.0
+#ruby-gemset=vboxer
 
-gem 'vagrant'
 gem 'veewee'
 gem 'veewee-templates-updater'
 
