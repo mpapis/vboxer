@@ -7,7 +7,7 @@
 
 ## Generate vm definition
 
-    vagrant basebox define 'rvm-ubuntu-11.10-i386' 'ubuntu-11.10-server-i386'
+    veewee vbox define 'rvm-ubuntu-11.10-i386' 'ubuntu-11.10-server-i386'
 
 Download required iso
 
@@ -30,12 +30,12 @@ Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby, rubygems
 
 ## Build the image
 
-    vagrant basebox build 'rvm-ubuntu-11.10-i386'
+    veewee vbox build 'rvm-ubuntu-11.10-i386'
 
 ## Validate and export so it could be reused later
 
-    vagrant basebox validate rvm-ubuntu-11.10-i386
-    vagrant basebox export rvm-ubuntu-11.10-i386 rvm-ubuntu-11.10-i386.box
+    veewee vbox validate rvm-ubuntu-11.10-i386
+    veewee vbox export rvm-ubuntu-11.10-i386 rvm-ubuntu-11.10-i386.box
 
 ## Add the new vagrant package
 
