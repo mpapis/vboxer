@@ -4,6 +4,9 @@
 
 date > /etc/vagrant_box_build_time
 
+# remove zypper package locks
+rm -f /etc/zypp/locks
+
 # install required packages
 packages=( gcc-c++ less make bison libtool ruby-devel vim )
 zypper --non-interactive install --no-recommends --force-resolution ${packages[@]}
