@@ -35,7 +35,7 @@ Edit `definitions/rvm-ubuntu-11.10-i386/postinstall.sh` - replace ruby, rubygems
 ## Validate and export so it could be reused later
 
     veewee vbox validate rvm-ubuntu-11.10-i386
-    veewee vbox export rvm-ubuntu-11.10-i386 rvm-ubuntu-11.10-i386.box
+    veewee vbox export rvm-ubuntu-11.10-i386
 
 ## Add the new vagrant package
 
